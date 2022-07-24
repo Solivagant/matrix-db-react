@@ -1,0 +1,20 @@
+
+.ActorImg {
+  width: 20vw;
+  height: 30vw;
+  object-fit: cover;
+}
+
+.card-title
+{
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card{
+  /* border-width: 0;   */
+  border-color: transparent;
+}
