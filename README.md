@@ -1,6 +1,8 @@
-A Matrix fan site, made with React.
+A Matrix web app, made with React.
 
-I'm a big fan of the Matrix saga and besides this web app, I also wrote a book about the Matrix movies, check it out: [The Matrix Illuminated](https://www.amazon.co.uk/Matrix-Illuminated-Exploring-Philosophies-Behind-ebook/dp/B09BMHS3TX).
+![matrixdb_screenshot](https://user-images.githubusercontent.com/297334/180646402-b96a493c-52dc-49e0-aa18-a0e59501a829.jpg)
+
+I wrote a book about the Matrix movies, check it out: [The Matrix Illuminated](https://www.amazon.co.uk/Matrix-Illuminated-Exploring-Philosophies-Behind-ebook/dp/B09BMHS3TX).
 
 ## Tech Stack
 - react
@@ -45,14 +47,17 @@ I'm proud of the simplicity of using Bootstrap's Fade component paired with a bo
     <Card key={"actor" + props.index}
       onMouseEnter={() => setIsCharacterShown(true)}
       onMouseLeave={() => setIsCharacterShown(false)}>
+      
       {isCharacterShown &&
         <Fade appear={true} in={isCharacterShown} unmountOnExit={true}>
           <Card.Img className="ActorImg" src={props.actor.photoCharacter} />
         </Fade>
       }
+      
       {!isCharacterShown && (
         <Card.Img className="ActorImg" src={props.actor.photo} />
       )}
+      
       <Card.Title>{props.actor.name}</Card.Title>
       <Card.Text>{props.actor.character}</Card.Text>
     </Card>
@@ -88,4 +93,4 @@ ps-container:dev
 ```
 
 ###  NOTICE
-This fan site is not authorised or endorsed by anyone associated with The Matrix or by Warner Bros., nor has it been approved, or licensed by anyone associated with the movies.
+This web app is not authorised or endorsed by anyone associated with The Matrix or by Warner Bros., nor has it been approved, or licensed by anyone associated with the movies.
